@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800;900&display=swap');
+
+
+*
+{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Schibsted Grotesk', sans-serif;
+}
+
+:root
+{
+    --color-menu: #d9d9d9;
+    --color-btn: #0DF205;
+}
+
+body
+{
+    background-image: url('/assets/img/2757.jpg');
+    background-size: cover;
+    
+}
+
+header
+{   
+    position: inherit;
+    background-color: var(--color-menu);
+    opacity: 97%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a img
+{
+    width: 150px;
+    height: 45px;
+    margin: 1rem 1.2rem;
+}
+
+header nav.navegation .menu
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+}
+
+header nav.navegation .menu li
+{
+    
+    margin-left: 2rem;
+    list-style: none;
+}
+
+header nav.navegation .menu li a
+{
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    
+}
+
+header nav.navegation .menu li a:hover
+{
+    background: var(--color-btn);
+    color: #fff;
+    opacity: 100%;
+}
+
+header nav.navegation .menu li a.registrar
+{
+    background: var(--color-btn) ;
+    padding: 10px;
+    font-weight: 800;
+}
+
+/* filtros */
+main 
+{
+    display: flex;
+}
+
+main section.filtro 
+{
+    background: var(--color-menu);
+    opacity: 97%;
+    max-width: 20%;
+    height: 85vh;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    border-radius: 6px;
+    padding: 3rem;
+}
+
+main section.filtro form
+{
+    display: grid;
+    gap: 0.5rem;
+    justify-content: center;  
+}
+
+main section.filtro form label
+{
+    margin-top: 2rem;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+main section.filtro form input
+{
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+}
+
+main section.filtro form button
+{
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 10px;
+}
+
+main section.filtro form button:hover
+{
+    background: var(--color-btn);
+    color: #fff;
+    font-weight: 600;
+}
+
+main section#ponto
+{
+    background: var(--color-menu);
+    opacity: 97%;
+    width: 75%;
+    height: 85vh;
+    margin-top: 1rem;
+    margin-left: 2.5rem;
+    border-radius: 6px;
+    padding: 3rem;
+    
+}
+
+table#tabela-jornada
+{
+    border-collapse: collapse;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-left: 200px;
+  
+}
+
+th,
+td {
+text-align: center;
+padding: 8px;
+border-bottom: 1px solid #ddd;
+}
+
+th {
+background-color: #f2f2f2;
+color: #333;
+font-weight: bold;
+}

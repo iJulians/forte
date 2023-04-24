@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ponto - FORTE</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#"><img src="/assets/img/logo verde.png" alt=""></a>
+        <nav class="navegation">
+            <ul class="menu">
+                <select name="tpPonto" id="idPonto">
+                    <option value="Inicio da jornada">Inicio da jornada</option>
+                    <option value="Inicio do intervalo">Inicio do intervalo</option>
+                    <option value="Fim do intervalo">Fim do intervalo</option>
+                    <option value="Fim da jornada">Fim da jornada</option>
+                </select>
+                <li><a href="#" class="registrar">Bater Ponto</a></li>
+                <li><a href="/index.html"><img src="/assets/icon/logout.svg" alt="icone para realizar o logout"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="filtro">
+            <form action="" method="post">
+                <label for="">Filtros</label>
+                <input type="date" name="datainicio" id="" placeholder="Inicio">
+                <input type="date" name="datafim" id="" placeholder="Fim">
+                <input type="search" name="filtroNome" id="filtroNome" placeholder="Nome">
+                <button type="submit">Filtrar</button>
+            </form>
+        </section>
+        <section id="ponto">
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <p>contact</p>
+            <a href="https://www.linkedin.com/in/juliano-silveira-424695191/" target="_blank"><img src="/assets/icon/linkedin.svg"
+             alt="icone da rede social linkedin"></a>
+            <a href="https://github.com/iJulians" target="_blank"><img src="/assets/icon/github.svg" 
+             alt="icone do github"></a>
+            <a href="mailto:contato.juliano.silveira@gmail.com" target="_blank"><img src="/assets/icon/envelope-solid.svg"
+             alt="icone do e-mail"></a>
+            
+            <p>created by JULIANO SILVEIRA</p>
+        </div>
+    </footer>
+</body>
+</html>

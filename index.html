@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forte Register</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <main>
+      <section>
+        <div class="lamina">
+          <div class="formulario">
+            <h1>Login</h1>
+            <br><br>
+            <form class="info">
+              <input type="email" placeholder="E-mail" id="email">
+              <input type="password" placeholder="Senha" maxlength="10" id="senha">
+              <input type="button" class="btacess" value="Entrar" onclick="verificarLogin()">
+            </form>
+            <div class="ajuda">
+                <a href="./src/pg/create/index.html">Cadastrar usuário</a>
+                <a href="./src/pg/recovery/index.html">Esqueci minha senha</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    <main>   
+  </body>
+  <script>
+		function verificarLogin() {
+			// Recupera os valores de e-mail e senha do formulário
+			var email = document.getElementById("email").value;
+			var senha = document.getElementById("senha").value;
+
+			// Simula o banco de dados de usuários
+			var usuarios = [
+				{ email: "aaa@aaa.com", senha: "123456", tipo: "normal"},
+				{ email: "bbb@bbb.com", senha: "123456", tipo: "adm" }
+			];
+
+			// Verifica se as credenciais estão corretas
+			for (var i = 0; i < usuarios.length; i++) {
+				if (email === usuarios[i].email && senha === usuarios[i].senha) {
+          if(usuarios[i].tipo === 'normal'){
+            window.location.href = "./src/pg/main/index.html";
+					  return;
+          } else {
+            window.location.href = "./src/pg/adm/index.html";
+            return;
+          }
+					// Redireciona para a página desejada se as credenciais estiverem corretas
+
+				}
+			}
+
+			// Se as credenciais estiverem incorretas, exibe uma mensagem de erro
+			alert("E-mail ou senha incorretos.");
+		}
+    
+  </script>
+</html>
